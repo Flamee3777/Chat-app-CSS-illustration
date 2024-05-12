@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    /* TEXT */
+    /* (sub-heading at the top of the app UI) */
+    --PaleViolet: hsl(276, 100%, 81%);
+    /* (chat on the left) */
+    --ModerateViolet: hsl(276, 55%, 52%);
+    /* (chat on the right) */
+    --DesaturatedDarkViolet: hsl(271, 15%, 43%);
+    /* (placeholder text) */
+    --GrayishBlue: hsl(206, 6%, 79%);
+    /* (main heading) */
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    /* (paragraph) */
+    --DarkGrayishViolet: hsl(270, 7%, 64%);
+    /* GRADIENTS */
+    --LightMagenta: hsl(293, 100%, 63%);
+    --LightViolet: hsl(264, 100%, 61%);
+    /* SECONDARY */
+    --White: hsl(0, 0%, 100%);
+    /* (app background) */
+    --LightGrayishViolet: hsl(270, 20%, 96%);
+    /* (submit button background) */
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    /* (radio button outline) */
+    --VeryLightMagenta: hsl(289, 100%, 72%);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-image: linear-gradient(to bottom, var(--White) , var(--LightGrayishViolet));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dis{
+    width: 30%;
+}
+.dis h1{
+    color: var(--VeryDarkDesaturatedViolet);
+    font-weight: 600;
+    font-size: 40px;
+}
+.dis p{
+    color: var(--DarkGrayishViolet);
+    line-height: 25px;
+}
+/* start phone */
+.phone{
+    width: 300px;
+    height: 660px;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px black;
+}
+.white {
+    width: 173px;
+    height: 40px;
+    border-radius: 18px;
+    background-color: var(--White);
+    margin: auto;
+    margin-top: -1px;
+    position: relative;
+    top: -13px;
+}
+.header{
+    background-image: linear-gradient(to right, var(--LightViolet) , var(--LightMagenta));
+    border-radius: 23px 23px 7px 7px;
+    width: 100%;
+    height: 15%;
+}
+/* start profile */
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -13px 20px 0px 20px;
+}
+.profile p{
+    margin-left: -50px;
+    color: var(--White);
+    font-weight: 700;
+}
+.profile p span{
+    color: rgba(255, 255, 255, 0.603);
+    font-weight: 100;
+    font-size: 14px;
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: white solid 2px;
+    margin-left: -55px;
+}
+/* end profile */
+/* start body */
+.body{
+    background-color: var(--LightGrayishViolet);
+    height: 82%;
+    border-radius: 0px 0px 23px 23px;
+    padding: 10px;
+}
+/* start messages */
+.message1{
+    width: fit-content;
+    background-color: hsl(289deg 100% 92.83% / 71%);
+    border-radius: 13px 13px 13px 5px;
+    padding: 10px;
+    color: var(--ModerateViolet);
+    font-size: 14px;
+}
+.message2{
+    width: fit-content;
+    margin-top: 10px;
+    background-color: hsl(289deg 100% 92.83% / 71%);
+    border-radius: 13px 13px 13px 5px;
+    padding: 10px;
+    color: var(--ModerateViolet);
+    font-size: 14px;
+}
+.message3{
+    float: right;
+    width: fit-content;
+    margin-top: 10px;
+}
+.message3 img{
+    width: 50px;
+    border-radius: 10px;
+}
+.message4{
+    float: right;
+    width: fit-content;
+    margin-top: 10px;
+    background-color: var(--White);
+    border-radius: 13px 13px 5px 13px;
+    padding: 10px;
+    color: var(--DesaturatedDarkViolet);
+    font-size: 14px;
+}
+.message5{
+    float: right;
+    width: fit-content;
+    margin-top: 10px;
+    background-color: var(--White);
+    border-radius: 13px 13px 5px 13px;
+    padding: 10px;
+    color: var(--DesaturatedDarkViolet);
+    font-size: 14px;
+}
+.message6{
+    float: left;
+    width: fit-content;
+    margin-top: 10px;
+    background-color: hsl(289deg 100% 92.83% / 71%);
+    border-radius: 13px 13px 13px 5px;
+    padding: 10px;
+    color: var(--ModerateViolet);
+    font-size: 14px;
+}
+/* end messages */
+/* start price */
+.firstprice{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--LightMagenta) , var(--LightViolet));
+    float: left;
+    margin-top: 10px;
+    border-radius: 13px 13px 13px 5px;
+    padding: 3px;
+    color: var(--White);
+    font-size: 14px;
+}
+.firstprice p{
+    color: rgba(255, 255, 255, 0.767);
+    margin-left: -50px;
+}
+.firstprice span{
+    color: var(--White);
+    font-weight: 800;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.secondprice{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--LightMagenta) , var(--LightViolet));
+    float: left;
+    margin-top: 10px;
+    border-radius: 13px 13px 13px 5px;
+    padding: 3px;
+    color: var(--White);
+    font-size: 14px;
+}
+.secondprice p{
+    color: rgba(255, 255, 255, 0.767);
+    margin-left: -50px;
+}
+.secondprice span{
+    color: var(--White);
+    font-weight: 800;
+    font-size: 18px;
+    margin-right: 10px;
+}
+/* end price */
+/* start placeholder */
+.sendmessage{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    float: left;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--GrayishBlue);
+    font-size: 14px;
+}
+.send{
+    border-radius: 50%;
+    background-color: var(--VeryDarkDesaturatedViolet);
+    width: 35px;
+    height: 35px;
+}
+.send .fa-solid{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 11px
+}
+/* end placeholder */
+/* end phone */
+/* start media */
+@media (max-width: 560px) {
+    body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .phone{
+        margin-top: 10%;
+    }
+    .dis {
+        text-align: center;
+        width: 90%;
+        margin: 10% 5% 25% 5%;
+    }
+}
